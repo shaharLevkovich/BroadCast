@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API Documentation</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+        <link rel="stylesheet" href="includes/style.css"/>
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>The Competition Channel</h1>
+                <h2>API Documentation</h2>
+                <a id="gitHub" href="https://github.com/shaharLevkovich/BroadCast.git">GitHub.com</a>
+            </header>
+            <main>
+                <section id="intro">
+                    <h2>Intruduction</h2>
+                    <p>  This Broadcast API created to provide details<br>
+                        About the shows on this channel<br>
+                        All the requests shouls be in GET/POST method<br>
+                        The result will return in JSON file.<br>
+                    </p>
+                </section>
+                <section id="getAll">
+                    <h2>Get All Shows (Method:GET)</h2>
+                    <p><br>You can see all the shows in this channel by entering the following URL:</p>
+                    <a href="https://broadcast-competition.herokuapp.com/shows"><br>https://broadcast-competition.herokuapp.com/shows</a>
+                    <p><br>Example of result in JSON file:</p>
+                    <img src="images/allShows.png">
+                </section>
+                <section id="update">
+                    <h2>Update Show Name By Id (Method:POST)</h2>
+                    <p><br>You can update a show name by entering ID in the body parameters in the following URL:
+                     <br><br>Parameters: id, name
+                    </p>
+                    <a href="https://broadcast-competition.herokuapp.com/shows"><br>https://broadcast-competition.herokuapp.com/shows</a>
+                    <p><br>Example of result in JSON file:<br></p>
+                    <img src="images/updateShowById.png">
+                </section>
+                <section id="getOne">
+                    <h2>Get Show By Id And Name (Method:GET)</h2>
+                    <p><br>You can find a show by ID and name by entering the following URL: </p>
+                    <a href="https://broadcast-competition.herokuapp.com/shows/[id]/[name]"><br>https://broadcast-competition.herokuapp.com/shows/[id]/[name]</a>
+                    <p><br>Example of result in JSON file:</p>
+                    <img src="images/getShowByNameId.png">    
+                </section>
+            </div>
+        </main>
+
+    </body>
+</html>
